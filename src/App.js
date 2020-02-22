@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import styled from 'styled-components';
+
+const Header = styled.header`
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content:  space-between;
+  background-color: ${props => props.color};
+  @media (max-weight:650) {
+      width: 100%;
+  }
+
+  &:hover {
+    background-color: #0f0;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header color='#f00'/>     
     </div>
   );
 }
