@@ -8,8 +8,8 @@ const Header = styled.header`
   display: flex;
   justify-content:  space-between;
   background-color: ${props => props.color};
-  @media (max-weight:650) {
-      width: 100%;
+  @media (max-weight:650px) {
+      width: 60px;
   }
 
   &:hover {
